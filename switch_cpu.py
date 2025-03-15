@@ -272,10 +272,10 @@ def printArt():
 	log(r"""
                              
                         ,---.
- One ping to           /    |
- rule them all        /     |
-   -Gandalf          /      |
-   -MICHAEL SCOTT    /       |
+ A packet is never     /    |
+ late, it arrives     /     |
+ precisely when it   /      |
+ means to           /       |
                _´_,'        |
          \   <  -'          :
           \   `-.__..--'``-,_\_
