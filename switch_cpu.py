@@ -270,12 +270,12 @@ def setDuplicationLevel(egress_port_panel, duplication_level=1):
 #Thanks to Sebastian Stöcker for base ASCII art of Gandalf
 def printArt():
 	log(r"""
-	
+                             
                         ,---.
- One ping              /    |
- to rule them all     /     |
- -Gandalf            /      |
- -MICHAEL SCOTT     /       |
+ One ping to           /    |
+ rule them all        /     |
+   -Gandalf          /      |
+   -MICHAEL SCOTT    /       |
                _´_,'        |
          \   <  -'          :
           \   `-.__..--'``-,_\_
