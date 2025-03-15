@@ -331,7 +331,7 @@ print("Ports should be entered as INTEGERS, matching the front panel.")
 print()
 print(" * Timestamping * (Configure per-port timestamp insertion)")
 print("setTimestamping(PORT,INGRESS_ENABLED,EGRESS_ENABLED)")
-print("Examples:"
+print("Examples:")
 print(" - Enable bi-directional timestamping on port 2: setTimestamping(2)")
 print(" - Enable only Ingress timestamping on port 2: setTimestamping(2,True,False)")
 print(" - Disable timestamping on port 2: setTimestamping(2,False,False)")
