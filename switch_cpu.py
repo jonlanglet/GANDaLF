@@ -244,7 +244,7 @@ def setDuplicationLevel(egress_port_panel, duplication_level=1):
 	p4.SwitchIngress.tbl_getDuplicationLevel.add_with_set_duplication_level(egress_port=egress_port_dp, num_duplicates=duplication_level)
 
 def printArt():
-	log("""
+	log(r"""
 	
                         ,---.
  One ping              /    |
