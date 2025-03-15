@@ -323,6 +323,7 @@ bootstrap()
 
 printArt()
 
+print("The switch is now a transparent wire for all port pairs (1,2) (3,4) ...")
 print("************************************************")
 print("  Usage Guide:  ")
 print("************************************************")
