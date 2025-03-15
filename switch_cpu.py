@@ -338,7 +338,7 @@ print(" - Disable timestamping on port 2: setTimestamping(2,False,False)")
 print()
 print(" * Duplication * (Configure per-port packet duplication)")
 print("setDuplicationLevel(PORT,DUPLICATIONLEVEL)")
-print("Examples:"
+print("Examples:")
 print(" - Duplicate packets egressing port 4 by x10: setDuplicationLevel(4,10)")
 print(" - Disable duplication on port 4: setDuplicationLevel(4)")
 print("************************************************")
