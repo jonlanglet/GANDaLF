@@ -159,6 +159,7 @@ def insertForwardingRules():
 		p4.SwitchIngress.tbl_portfwd.add_with_forward(ingress_port=network_port, egress_port=host_port) #Forwarding from network to host
 
 def getPortMapping():
+	import time
 	global log, bf_port
 	
 	log("Getting the port mapping")
@@ -241,8 +242,41 @@ def setDuplicationLevel(egress_port_panel, duplication_level=1):
 	
 	log("Inserting new entry in table...")
 	p4.SwitchIngress.tbl_getDuplicationLevel.add_with_set_duplication_level(egress_port=egress_port_dp, num_duplicates=duplication_level)
+
+def printArt():
+	log("""
 	
+                        ,---.
+ One ping              /    |
+ to rule them all     /     |
+ -Gandalf            /      |
+ -MICHAEL SCOTT     /       |
+               _´_,'        |
+         \   <  -'          :
+          \   `-.__..--'``-,_\_
+                 |o/ ` :,.)_`>
+                 :/ `     ||/)
+                 (_.).__,-` |\
+                 /( `.``   `| :
+                 \'`-.)  `  ; ;
+                 | `       /-<
+                 |     `  /   `.
+ ,-_-..____     /|  `    :__..-'\
+/,'-.__\\  ``-./ :`      ;       \
+`\ `\  `\\  \ :  (   `  /  ,   `. \
+  \` \   \\   |  | `   :  :     .\ \
+   \ `\_  ))  :  ;     |  |      ): :
+  (`-.-'\ ||  |\ \   ` ;  ;       | |
+   \-_   `;;._   ( `  /  /_       | |
+    `-.-.// ,'`-._\__/_,'         ; |
+       \:: :     /     `     ,   /  |
+        || |    (        ,' /   /   |
+        ||                ,'   /    |
+
+	""")
+
 def bootstrap():
+	import time
 	global log, port_mapping, getPortMapping, bindDigestCallback, insertForwardingRules, configMulticasting
 	
 	log("Bootstrapping GANDaLF")
@@ -257,9 +291,12 @@ def bootstrap():
 	configMulticasting()
 	
 	log("Bootstrap complete")
+	
 
 
 bootstrap()
+
+printArt()
 
 print("************************************************")
 print("First, to enable configuration commands, run: bfrt")
