@@ -291,13 +291,6 @@ def printArt():
 `\ `\  `\\  \ :  (   `  /  ,   `. \
   \` \   \\   |  | `   :  :     .\ \
    \ `\_  ))  :  ;     |  |      ): :
-  (`-.-'\ ||  |\ \   ` ;  ;       | |
-   \-_   `;;._   ( `  /  /_       | |
-    `-.-.// ,'`-._\__/_,'         ; |
-       \:: :     /     `     ,   /  |
-        || |    (        ,' /   /   |
-        ||                ,'   /    |
-
 	""")
 
 def bootstrap():
@@ -323,11 +316,10 @@ bootstrap()
 
 printArt()
 
-print("The switch is now a transparent wire for all port pairs (1,2) (3,4) ...")
 print("************************************************")
 print("  Usage Guide:  ")
 print("************************************************")
-print("Here you can configure packet timestamping and duplication per-port.")
+print("The switch is now a transparent wire for all port pairs (1,2) (3,4) ...")
 print("Ports should be entered as INTEGERS, matching the front panel.")
 print()
 print(" * Timestamping * (Configure per-port timestamp insertion)")
